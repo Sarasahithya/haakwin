@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            height: 100vh;
+            margin: 0;
+            background-color: #f4f4f9;
+        }
+        .container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            width: 100%;
+            padding: 20px;
+        }
+        .image-container {
+            background-image: url("b1.avif"); 
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-color: transparent; 
+        }
+        .left {
+            height: 100%;
+            width: 100%;
+            flex: 0.5;
+            text-align: center;
+            background-color: rgb(158, 196, 183);
+        }
+        .right {
+            height:100%;
+            width: 100%;
+            flex: 1.5;
+            text-align:center;
+        }
+        h1 {
+            color: #080808;
+        }
+        p {
+            color: #0f0f0f;
+            text-align:center;
+            padding: 200px 20px;
+        }
+        button {
+            padding: 10px 20px;
+            background-color: #4d5ef1;
+            color: white;
+            border:#333;
+            border-radius: 5px;
+            cursor: pointer;
+
+        }
+        button:hover {
+            background-color: #4f52f1;
+        }
+        img {
+            width: 200px;
+            height: 200px;
+            border-radius: 50%;
+            object-fit:fill;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="left">
+            <img src="p1.png" alt="My Portfolio">
+            <h1>Sara Sahithya Tatapudi</h1>
+            <button onclick="window.location.href='portfolio.html'">About Me</button>
+        </div>
+        <div class="right image-container">
+            <p><strong>Hi, I am Sara Sahithya.</strong><br>
+                I am currently studying B.Tech at PBR Visvodaya Institute of Technology and Science.
+                I have a passion for web development and am learning various web technologies,
+                 including HTML, CSS, and JavaScript.</p>
+        </div>
+    </div>
+</body>
+</html>
